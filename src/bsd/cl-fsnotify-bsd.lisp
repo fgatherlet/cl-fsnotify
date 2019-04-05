@@ -68,4 +68,3 @@
   (remove-if #'null
              (loop for event-namestring in (cl-fsnotify-kqueue:get-events *kq* :blockp blockp)
                    append (get-all-fs-events event-namestring))))
-
